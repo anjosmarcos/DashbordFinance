@@ -1,6 +1,5 @@
 {
     "env": {
-        "browser": true,
         "es2021": true,
         "node": true,
         "es6": true
@@ -10,5 +9,7 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-    "rules": {}
+    "rules": {
+        "no-console": "off"
+    }
 }
