@@ -14,7 +14,7 @@ BEGIN
     ) THEN
         CREATE TYPE transaction_type AS ENUM ('EARNING', 'EXPENSE', 'INVESTMENT');
     END IF;
-END $$;
+END$$;
 
 -- Criação da tabela transactions
 CREATE TABLE IF NOT EXISTS transactions (
