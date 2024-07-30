@@ -7,7 +7,7 @@ export class CreateUserUseCase {
     async execute(createUserParams) {
         // TODO: verificar se o email ja esta em uso
         // Gerar ID do user
-        const userID = uuidv4()
+        const userId = uuidv4()
 
         // criptografar a senha
         const hashedPassword = await bcrypt.hash(createUserParams.password, 10)
@@ -15,7 +15,7 @@ export class CreateUserUseCase {
         // inserir o usuário no bd
         const user = {
             ...createUserParams,
-            id: userID,
+            id: userId,
             password: hashedPassword,
         }
 
