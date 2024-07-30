@@ -7,7 +7,6 @@ import { EmailAlreadyInUseError } from '../errors/user.js'
 
 export class CreateUserUseCase {
     async execute(createUserParams) {
-        // TODO: verificar se o email ja esta em uso
         const postGetUserByEmailRepository = new PostGetUserByEmailRepository()
         const userWithProviderEmail =
             await postGetUserByEmailRepository.execute(createUserParams.email)
