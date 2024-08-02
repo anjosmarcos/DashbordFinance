@@ -1,4 +1,4 @@
-import { GetUserByIdUserCase } from '../user-cases/get-user-by-id.js'
+import { GetUserByIdUserCase } from '../user-cases/index.js'
 import {
     checkIfIsValid,
     invalidIdResponse,
